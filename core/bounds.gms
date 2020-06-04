@@ -232,11 +232,6 @@ if (cm_nucscen eq 7,
   vm_prodSe.up(t,regi_nucscen,"peur","seel","tnrs")$(t.val ge 2040) = 0;
 );
 
-*GL* No fossil technologies from 2050
-if (cm_fosscen eq 1, !! no fossil energy from 2050
-	vm_prodSe.up(t,regi,peFos,enty,enty2)$(t.val gt 2050) = 0.0001;
-);
-
 *** -------------------------------------------------------------
 *** *DK* Phaseout of 1st generation biofuel technologies
 *** -------------------------------------------------------------
